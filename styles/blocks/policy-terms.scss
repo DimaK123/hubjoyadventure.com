@@ -1,0 +1,72 @@
+.policy-terms {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include onDesktop {
+      gap: 56px;
+    }
+  }
+
+  &__section-title {
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: $page-green-color;
+
+    padding: 24px 32px;
+    margin: 0;
+
+    border-radius: 99px;
+    background-color: #A8D5BA3D;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__main-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: $page-black-color;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    margin-bottom: 16px;
+
+    @include onDesktop {
+      font-size: 64px;
+      
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subtitle {
+    // font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+
+    margin-bottom: 16px;
+
+    @include onDesktop {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1;
+
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    list-style: disc;
+    padding-left: 25px;
+  }
+
+  &__link {
+    word-break: break-all;
+  }
+}

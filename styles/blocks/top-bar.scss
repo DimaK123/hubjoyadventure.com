@@ -1,0 +1,26 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-weight: 600;
+    color: #fff;
+  }
+
+    &__button {
+    @include figure(48px);
+
+    background-image: url('../images/icons/burger-menu.svg');
+    background-position: center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+
+    &--close {
+      background-image: url('../images/icons/menu-close.svg');
+    }
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  color: #fff;
+
+  background-color: $page-green-color;
+
+
+  padding: 24px 0;
+
+  border-radius: 16px;
+
+  &--menu {
+    padding: $padding-mobile 0;
+  }
+
+  @include onDesktop {
+    padding: 0;
+
+    background-color: transparent;
+  }
+}
