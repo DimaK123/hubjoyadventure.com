@@ -1,0 +1,37 @@
+.advantages {
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include onDesktop {
+      gap: 24px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+
+    border: 1px solid $page-green-color;
+    border-radius: 16px;
+
+    padding: 40px;
+
+    &-title {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+      color: $page-green-color;
+
+      margin-bottom: 24px;
+
+      @include onDesktop {
+        font-size: 32px;
+        line-height: 1;
+      }
+    }
+  }
+}

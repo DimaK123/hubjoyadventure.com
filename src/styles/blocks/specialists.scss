@@ -1,0 +1,43 @@
+.specialists {
+  &__cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include onDesktop {
+      gap: 24px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 311px;
+
+    min-height: 240px;
+    padding: $padding-mobile 24px;
+
+    color: #fff;
+
+    border-radius: 8px;
+    background-color: $page-light-green-color;
+
+    @include onDesktop {
+      flex-basis: 254px;
+    }
+  }
+
+  &__speciality {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__specialist {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+  }
+}

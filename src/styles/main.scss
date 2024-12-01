@@ -1,0 +1,24 @@
+@import 'node_modules/normalize.css/normalize';
+@import './reset';
+
+@import './utils/variables';
+@import './utils/mixins';
+
+
+@import './blocks/wrapper';
+@import './blocks/grid';
+@import './blocks/page';
+@import './blocks/section-title';
+@import './blocks/top-bar';
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/top.scss';
+@import './blocks/action-button';
+@import './blocks/spa-angebot';
+@import './blocks/about-us';
+@import './blocks/advantages';
+@import './blocks/main-image';
+@import './blocks/specialists';
+@import './blocks/contacts';
+@import './blocks/footer';
+@import './blocks/policy-terms';

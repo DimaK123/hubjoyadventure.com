@@ -1,0 +1,66 @@
+.page {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $page-black-color;
+
+  background-color: $page-color;
+
+  padding: 160px 0 $padding-mobile;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 128px;
+
+  @include onDesktop {
+    scroll-padding-top: 132px;
+  }
+
+  @include onDesktop {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &--policy-terms {
+    @include onDesktop {
+      padding: 255px 0 $padding-mobile;
+    }
+  }
+
+  &__body {
+    &--fixed {
+      overflow-y: hidden;
+    }
+  }
+
+  &__header {
+    position: fixed;
+    top: $padding-mobile;
+    left: $padding-mobile;
+    right: $padding-mobile;
+    z-index: 2;
+
+    @include onDesktop {
+      right: 0;
+      left: 0;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+
+    margin-bottom: 95px;
+
+    @include onDesktop {
+      gap: 200px;
+
+      margin-bottom: 200px;
+    }
+  }
+
+  &__footer {
+    margin-top: 40px;
+  }
+}
+

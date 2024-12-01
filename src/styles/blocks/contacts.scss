@@ -1,0 +1,124 @@
+.contacts {
+
+  &__section-title {
+    @include onDesktop {
+      position: relative;
+
+      font-size: 62px;
+      line-height: 1;
+
+      margin-bottom: 60px;
+
+      &::after {
+        content: 'Hub Joy Adventure';
+        position: absolute;
+        right: 0;
+        bottom: -58px;
+
+        font-family: "Sacramento", cursive;
+        font-size: 72px;
+        font-weight: 400;
+        text-transform: lowercase;
+        color: #EBD8D1;
+
+        width: max-content;
+      }
+    }
+  }
+
+  &__opening-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 24px;
+
+    @include onDesktop {
+      gap: 24px;
+
+      margin-bottom: 56px;
+
+      & p {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__address {
+    @extend .contacts__opening-hours;
+
+    @include onDesktop {
+      grid-row: 3 / 4;
+
+      margin-bottom: 0;
+    }
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    font-weight: 600;
+
+    @include onDesktop {
+      font-size: 40px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @include onDesktop {
+      line-height: 36px;
+    }
+
+    &::before {
+      content: '';
+      @include figure(24px);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--location::before {
+      background-image: url('../images/icons/location.svg');
+    }
+  
+    &--tel::before {
+      background-image: url('../images/icons/phone.svg');
+    }
+  
+    &--mail::before {
+      background-image: url('../images/icons/mail.svg');
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 439px;
+
+    @include onDesktop {
+      grid-row: 2 / 4;
+      align-self: center;
+      gap: 24px;
+    }
+  }
+
+  &__input {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 24px;
+
+    border-radius: 99px;
+    border: 1px solid $page-light-green-color;
+
+    &::placeholder {
+      color: #505050;
+    }
+  }
+}
